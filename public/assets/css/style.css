@@ -1,0 +1,11 @@
+html {
+   --cell-size: 100px;
+   --color-one: #000;
+   --color-two: #aaa;
+   --color-three: #fff;
+   --color-four: #666;
+   --color-five: blue;
+   font-family: "Lucida Console", sans-serif;
+   text-align: center;
+   background-color: #6f6e6b;
+}
