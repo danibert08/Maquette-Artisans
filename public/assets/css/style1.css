@@ -44,12 +44,13 @@
 .en-tete__title_commune{
     font-weight: bold;
     font-size: 3vw;
-    margin-bottom: 5vw;
+    /* margin-bottom: 5vw; */
 }
 .en-tete__contact{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 5vw;
+    margin-top: 5vw;
 }
 .button{
     display: flex;
@@ -117,14 +118,14 @@
 
             /***  Présentations des photos ***/
 
-.photo{
+ .photo{ 
     box-shadow: 0 0 2vw #2e2027;
     border-radius: 10px; 
     width: 20vw; 
     margin: 5vw;
     left: -10vw;
 }
-.photo1{
+/* .photo1{ 
     transform: rotate(-20deg) translate(-3vw);
     
 }
@@ -136,26 +137,31 @@
 }
 .photo4{
     transform: rotate(-10deg) translate(1vw, 3vw);
-}
+ } */
 .photo5{
-    transform: rotate(0deg) translate(-3vw, -3vw);
+    transform: rotate(0deg) translate(0vw, -4vw);
 }
-.photo6{
+/* .photo6{ 
     transform: rotate(-20deg) translate(1vw, 3vw);
-}
+ } 
 .photo7{
     transform: rotate(-20deg) translate(-3vw);
-}
+} */
 .photo8{
-    transform: rotate(10deg) translate(1vw, -3vw);
-}
+    transform: rotate(0deg) translate(0vw, -4vw);
+} 
 .photo9{
-    transform: rotate(10deg) translate(-2vw, -2vw);   
+    transform: rotate(0deg) translate(0vw, -4vw);   
 }
-.photo10{
+/* .photo10{ 
     transform: rotate(-10deg) translate(1vw, 3vw);
-}
-
+} */
+.photo13{
+    transform: rotate(0deg) translate(0vw, -5vw);
+} 
+.photo18{
+    transform: rotate(0deg) translate(0vw, -1vw);
+} 
 
 
 .menu {
