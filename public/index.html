@@ -12,11 +12,20 @@
 </head>
 <body>
     <div class="container">
+        <nav class="navbar navbar-top">
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#nails">Ongles</a></li>
+                <li><a href="#make-up">Maquillage</a></li>
+                <li><a href="#payment">Paiement</a></li>
+                <li><a href="#whoami">Qui suis-je</a></li>
+            </ul>
+        </nav>
         <header>
 
                     <!--     En-tête Hero et logo  -->
 
-            <div class="en-tete">
+            <div id="accueil" class="en-tete">
                 <div class="en-tete__hero">
                     <img class="en-tete__hero_hero-img" src="assets/photos/mains/m13hero.jpeg" alt="" >
                 </div>
@@ -58,12 +67,14 @@
         </header>
         <main>
                                 <!--       SECTION SERVICES    -->
-            <section class="services">
+
+            <section id="nails" class="services">
                 <h2 class="services__title limelight-regular">Mes services</h2>
 
                                 <!--      Services Ongles     -->
-                <div class="services__lambda">
-                    <h2 class="services__lambda_title">Ongles</h2>
+
+                <div  class="services__lambda">
+                    <h2  class="services__lambda_title">Ongles</h2>
                     <p class="services__lambda_text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur, natus, asperiores vitae ipsam provident quo ab minus officia, ipsum quia sequi repellat adipisci modi ipsa eius ducimus? Cumque et ipsa unde, doloremque hic voluptates nesciunt aliquam fugit impedit nemo minus possimus assumenda praesentium earum autem, architecto similique 
                     </p>
@@ -104,7 +115,7 @@
                         07 45 06 34 58 
                     </a>
                 </div>
-                <div class="button">              
+                <div id="make-up" class="button">              
                     <img class="en-tete__contact_icone-telephone" src="assets/icones/email.svg" alt="">
                     <a class="en-tete__contact-text" href="mailto:juniajeune8@gmail.com">                   
                        Ecrire                 
@@ -115,12 +126,13 @@
                                 <!--     Service Maquillage     -->
 
                 <div class="services__lambda">
-                    <h2 class="services__lambda_title">Maquillage</h2>
+                    <h2  class="services__lambda_title">Maquillage</h2>
                     
                         <p class="services__lambda_text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita nam obcaecati repudiandae. Facere temporibus maxime rem, nulla blanditiis ipsa eius? Expedita pariatur, nulla repellendus numquam voluptates tenetur harum, sit vero recusandae voluptatum possimus, quis quisquam maxime inventore incidunt excepturi cumque. Tempora odit ut vero cupiditate architecto! Eaque iste earum 
                         </p>
                                 <!--     Images maquillage    -->
+
                         <p class="services__lambda_photos">
                             <img class="photo photo11" src="assets/photos/maquillage/mq1.jpeg" width="100" alt="">
                         
@@ -149,13 +161,22 @@
                 </div>       
             </section>   
 
+                                    <!-- SECTION TARIF.    -->
+
+             <section id="payment" class="services">
+                <h2 class="services__title limelight-regular">Paiement</h2>            
+                <div class="services__lambda">
+                    <h2 class="services__lambda_title">Tarif</h2>
+                    <p class="services__lambda_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur, natus, asperiores vitae ipsam provident quo ab minus officia, ipsum quia sequi repellat adipisci modi ipsa eius ducimus? Cumque et ipsa unde, doloremque hic voluptates nesciunt aliquam fugit impedit nemo minus possimus assumenda praesentium earum autem, architecto similique 
+                    </p>  
+                </div>
+            </section>                       
+
                                 <!--     SECTION QUI SUIS-JE    -->
 
-            
-             <section class="services">
-                <h2 class="services__title limelight-regular">Qui suis-je</h2>
-c
-                              
+             <section id="whoami" class="services">
+                <h2 class="services__title limelight-regular">Qui suis-je</h2>            
                 <div class="services__lambda">
                     <h2 class="services__lambda_title">JUNIA</h2>
                     <p class="services__lambda_text">
@@ -177,17 +198,18 @@ c
                     </a>
                 </div>
             </div>
-                <nav>
-                    <menu class="menu">            
-                        <li>Mes services</li>
-                        <li>Mes réalisations</li>
-                        <li>Qui suis-je</li> 
-                        <li>Contact</li>         
-                    </menu>
+                <nav class="navbar navbar-bottom">
+                    <ul class="nav-links">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#nails">Ongles</a></li>
+                        <li><a href="#make-up">Maquillage</a></li>
+                        <li><a href="#payment">Paiement</a></li>
+                        <li><a href="#whoami">Qui suis-je</a></li>
+                    </ul>
                 </nav>
         </main>
-        <footer>
-            <p>Pied de page</p>
+        <footer class="footer-nav">
+            <a class="mentions-link" href="mentions.html">Mentions légales</a>
         </footer>
     </div>
 </body>

@@ -1,3 +1,4 @@
+
                    
                     /**  screen  width <= 500px **/
 
@@ -143,26 +144,95 @@
     transform: rotate(0deg) translate(0vw, -1vw);
 } 
 
+                    /*** Styles de la barre de navigation ***/
 
-.menu {
+.navbar {
     display: flex;
-    margin-right: 20px;
+    justify-content: space-evenly;
     align-items: center;
+    background-color: #e99fb1;
+    padding: 0.5rem 0.5rem;
+    color: white;
+    position: -webkit-sticky; /* Compatibilité Safari */
+    position: sticky;
+    width: 100%; /* Ou toute largeur < 100% */
+    margin: 0 auto; /* Centre la navbar */
+    z-index: 1000; /* Reste au-dessus du contenu */
+    /* Optionnel : ajout d'une bordure ou ombre pour la visibilité */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
-ul {
-    margin-right: 20px;
+.navbar.navbar-bottom{
+    bottom: 0;
+    width:100%;
 }
-footer{
-    margin: 5px;
+.navbar-mentions.navbar-bottom{
+    bottom: 0;
+    width:20%;
+    min-width: 100px;
 }
+
+.navbar-top{
+    display: none;
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; }
+
+                    /*** Liste de liens ***/
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: auto;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { color: #000; }
+
+
+                    /************************/
+                    /*** Mentions Légales ***/
+
+.mentions{
+    width:80%;
+    margin:auto;
+    padding-bottom: 3vw;
+}
+.footer-nav{
+    text-align: center;
+    margin: 10px;
+}
+.mentions-link{
+    font-size: 3vw;
+}
+
+                    /*** Responsive : menu vertical sur petits écrans ***/
+
+@media (max-width: 310px) {
+   
+  
+    .nav-links a{
+    font-size: 8px;
+    /* .navbar { flex-direction: column; }
+    .nav-links { margin-top: 10px; flex-direction: column; gap: 10px; text-align: center; } */
+    } 
+}
+
 
                 /*****************************/
-                /**  Screen width  > 500 px **/
+                /**  Screen width  > 580 px **/
 
 
-@media screen and (width >= 500px){
+@media screen and (width >= 570px){
     .container{
         background-color: #FFF;
+        height: auto;
         width: 70vw;
         margin: auto; 
     }
@@ -174,6 +244,30 @@ footer{
     }
     .services__lambda_text{
         width: 50vw;
+    }
+    .navbar.navbar-top{
+        display: flex;
+        width: 100%;
+        padding: 1rem 0.2rem;
+        top: 0;
+    }
+    .navbar-mentions.navbar-top{
+        display: flex;
+        width:10%;
+        top: 0;
+    }
+    .navbar-bottom {
+        display: none;
+    }
+    .nav-links a {
+    font-size: 18px;
+    }
+    .mentions-link{
+        font-size: 20px;
+    }
+    .footer-nav{
+    text-align: center;
+    margin: 20px;
     }
 }
  
@@ -189,5 +283,8 @@ footer{
     }
     .button{
         border-radius: 30px;
+    }
+    .nav-links{
+        gap:30px;
     }
 }
