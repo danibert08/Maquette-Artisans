@@ -5,6 +5,7 @@
 
 .container{
     background-color: #FFF;   
+    width:100vw;
 }
 
                         /***   Header   ***/
@@ -144,6 +145,26 @@
     transform: rotate(0deg) translate(0vw, -1vw);
 } 
 
+                            /*** Social media ***/
+
+.socialmedia{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.socialmedia-img{
+   width: 40px;
+   margin: 0 3em;
+}
+.socialmedia-title{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 2em 0 1em;
+}
+
+
                     /*** Styles de la barre de navigation ***/
 
 .navbar {
@@ -213,21 +234,17 @@
     font-size: 0.8em;
 }
 
-                    /*** Responsive : menu vertical sur petits écrans ***/
+                    /*** Réduction taille des liens sur petits écrans ***/
 
 @media (max-width: 310px) {
-   
-  
     .nav-links a{
     font-size: 8px;
-    /* .navbar { flex-direction: column; }
-    .nav-links { margin-top: 10px; flex-direction: column; gap: 10px; text-align: center; } */
     } 
 }
 
 
-                /*****************************/
-                /**  Screen width  > 580 px **/
+                        /*****************************/
+                        /**  Screen width  > 580 px **/
 
 
 @media screen and (width >= 570px){
