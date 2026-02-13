@@ -111,7 +111,7 @@
 .services__lambda_text{
     width: 70vw;
     margin-bottom: 2vw;
-    font-size: 2vw;
+    font-size: 1em;
     
 }
 .services__lambda_photos{
@@ -244,6 +244,7 @@
     }
     .services__lambda_text{
         width: 50vw;
+        font-size: 1.3em;
     }
     .navbar.navbar-top{
         display: flex;
@@ -286,5 +287,8 @@
     }
     .nav-links{
         gap:30px;
+    }
+    .services__lambda_text{
+        font-size: 1.7em;
     }
 }
