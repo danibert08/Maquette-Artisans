@@ -332,16 +332,17 @@ textarea {
     width:80%;
     margin: 3rem auto 2rem;
     padding-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .mentions > h1 {
-    font-size: 2rem;
+    font-size: 24em;
     text-align: center;
+    font-weight: bold;
 }
 
 .mentions  h2 {
-    font-size: 1.5rem;
-    font-family: bold;
+    font-size: 3rem;
     text-decoration: underline;
 }
 
