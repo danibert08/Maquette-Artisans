@@ -1,8 +1,9 @@
 html{
     
-   --button-bg-color: #ced6e0;
+    --button-bg-color: #ced6e0;
     --button-border-color:black;
     --button-box-shadow:  #a4b0be;
+    --button-text-color: black;
     --services-box-shadow: #a4b0be;
     --photo-shadow: #2e2027;
     --socialmedia-title-color: #57606f;
@@ -95,6 +96,7 @@ html{
     font-size: 1.3rem;
     padding: 0.8rem; 
     margin:auto;
+    color: var(--button-text-color);
 } 
 
 button:hover {
@@ -174,35 +176,6 @@ button:active {
     width: 35%; 
     margin: 20px 5%;  
 }
-
-/* @media(pointer:fine){
-    .photo:hover{
-        scale:2;
-    }
-} */
-
-/* .photo2{
-    transform: rotate(0deg) translate(0vw, -10rem);
-}
-
-.photo3{
-    transform: rotate(0deg) translate(0vw, -8rem);
-}
-
-.photo6{
-    transform: rotate(0deg) translate(0vw, -10rem);   
-}
-
-.photo7{
-    transform: rotate(0deg) translate(0vw, -7rem);
-}
-.photo8{
-    transform: rotate(0deg) translate(0vw, -5rem);
-}
-
-.photo18{
-    transform: rotate(0deg) translate(0vw, -3rem);
-} */
  
                     /*********************/
                     /*** form contact ***/
@@ -286,6 +259,7 @@ textarea {
     width: 2rem;
     margin:  0.1em 1.5em;
 }
+
 .insta ,.fbook, .tictac{
     display: inline;
 }
@@ -351,14 +325,28 @@ textarea {
     transform: scale(1.5);
  }
 
-
                     /************************/
                     /*** Mentions Légales ***/
 
 .mentions{
     width:80%;
-    margin:auto;
+    margin: 3rem auto 2rem;
     padding-bottom: 2rem;
+}
+
+.mentions > h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.mentions  h2 {
+    font-size: 1.5rem;
+    font-family: bold;
+    text-decoration: underline;
+}
+
+.button-bottom{
+    margin: 2rem auto 2rem;
 }
 
 .footer-nav{
@@ -513,7 +501,7 @@ textarea {
 
 @media screen and (min-width: 1000px){
     .container{
-        background-color: #FFF;
+        background-color: var(--container-bg-color);
         width: 70vw;
         margin: auto; 
     }
@@ -570,8 +558,6 @@ textarea {
         font-size: 3rem;
     }  
 }
-
-
 
                     /*************************/
                         /*** Body themes ***/
